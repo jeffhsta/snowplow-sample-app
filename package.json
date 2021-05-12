@@ -1,0 +1,31 @@
+{
+  "name": "snowplow-sample-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeffhsta/snowplow-sample-app.git",
+  "author": "Jefferson Stachelski <jefferson.stachelski@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test jest --silent",
+    "lint": "eslint .",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/express": "^4.17.11",
+    "@types/node": "^15.0.3",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.26.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettierx": "^0.18.0",
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

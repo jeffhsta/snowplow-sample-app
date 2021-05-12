@@ -1,0 +1,25 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettierx/standardx",
+    "plugin:prettierx/@typescript-eslint"
+  ],
+  "plugins": ["@typescript-eslint", "prettierx", "jest"],
+  "parserOptions": {
+    "warnOnUnsupportedTypeScriptVersion": false
+  },
+  "rules": {
+    "prettierx/options": [
+      "error",
+      {
+        "spaceBeforeFunctionParen": false,
+        "printWidth": 120
+      }
+    ]
+  }
+}
