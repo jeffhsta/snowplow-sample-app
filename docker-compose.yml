@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  snowplow-micro:
+    image: snowplow/snowplow-micro:1.1.1
+    ports:
+      - 9090:9090
+    volumes:
+      - ./snowplow-micro:/config
+    command:
+      - --collector-config
+      - /config/micro.conf
+      - --iglu
+      - /config/iglu.json
+
+volumes:
+  snowplow-micro:
