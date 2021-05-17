@@ -1,35 +1,41 @@
 {
-    "compilerOptions": {
-      "target": "es2019",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "baseUrl": ".",
-      "outDir": "dist",
-      "paths": {
-        "@src/*": ["src/*"],
-        "@test/*": ["test/*"]
-      },
-  
-      "sourceMap": true,
-      "removeComments": true,
-  
-      "strict": true,
-      "noImplicitAny": false,
-      "strictNullChecks": true,
-      "strictFunctionTypes": true,
-      "noImplicitThis": true,
-      "alwaysStrict": true,
-  
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noImplicitReturns": true,
-      "noFallthroughCasesInSwitch": true,
-  
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+      "@test/*": [
+        "test/*"
+      ]
     },
-    "include": ["src", "test"],
-    "exclude": ["node_modules", "dist"]
-  }
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
+}
