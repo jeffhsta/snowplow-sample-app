@@ -1,4 +1,5 @@
 import express, { Request, Response } from 'express';
+import snowplow from '@snowplow/node-tracker';
 
 const port = parseInt(process.env.PORT || '8000')
 const app = express();
