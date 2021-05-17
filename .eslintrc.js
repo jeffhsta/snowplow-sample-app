@@ -15,5 +15,9 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-  }
+  },
+  ignorePatterns: [
+    'dist/*',
+    'node_modules/*'
+  ]
 }
